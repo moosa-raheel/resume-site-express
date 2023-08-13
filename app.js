@@ -7,8 +7,11 @@ const app = express();
 app.use("/", web);
 
 // load static files
-app.use("/static", express.static(join(process.cwd(), "public")));
+app.use("/", express.static(join(process.cwd(), "public")));
 
+app.get("*", (req, res) => {
+  res.render("notFound");
+});
 //set view engine
 app.set("view engine", "ejs");
 

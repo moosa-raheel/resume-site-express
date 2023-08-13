@@ -1,0 +1,23 @@
+<%- include('partials/boilerCode') %>
+<div class="main">
+  <%- include('partials/navbar',{page:"contact"}) %>
+  <section class="content">
+    <h1 class="center contact-head">Conatact</h1>
+    <form>
+      <input type="text" placeholder="Enter name here" id="username" />
+      <input type="email" placeholder="Enter email here" id="email" />
+      <input type="number" placeholder="Enter phone number here" id="number" />
+      <textarea
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Enter your message"
+      ></textarea>
+      <div class="submit">
+        <input type="submit" value="submit" />
+      </div>
+    </form>
+  </section>
+</div>
+<script src="/js/script.js"></script>
+<%- include('partials/boilerCodeEnd') %>

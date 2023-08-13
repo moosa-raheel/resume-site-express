@@ -1,4 +1,4 @@
 const homeController = (req, res) => {
-  res.render("home");
+  res.render("home", { title: "Home" });
 };
 export { homeController };

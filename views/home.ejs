@@ -1,11 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Home Page</h1>
-  </body>
-</html>
+<%- include('./partials/boilerCode') %>
+<div class="main">
+  <%- include('./partials/navbar',{page:"home"}) %>
+  <section class="content">
+    <div class="pic">
+      <img src="/images/pic.jpg" alt="Image" />
+    </div>
+    <article class="article">
+      <h1 class="st-font">Hello,</h1>
+      <p class="para">
+        &MediumSpace; &MediumSpace; &MediumSpace; &MediumSpace; &MediumSpace;
+        &MediumSpace; &MediumSpace; &MediumSpace; &MediumSpace; &MediumSpace;
+        &MediumSpace; &MediumSpace; &MediumSpace;I am
+        <span>Moosa Raheel</span> I am called by Moosa Raheel. I am from Karachi
+        in Pakistan. My mother language is Urdu. My hobby is Programming,
+        listening songs and watching movies and web series. My favourite singer
+        is Justin Bieber. My favourite programming language is JavaScript. My
+        favourite personality is Linus Torvalds. I am 17 years old .I start
+        programming and web development when I was 16 years old. For now I am a
+        student of DAE 1<sup>st</sup> Year in CIT I want to become a full stack
+        web developer and computer genius. That's what I've been working on
+        lately. <br /><br />
+        Well I know HTML, CSS, Git, Linux, Mark down, Tailwind CSS which is
+        utility-first CSS framework and JavaScript in great detail like Object
+        Oriented Programming and prototypal inheritance closure etc . I also
+        know little bit Python , PHP ,SQL, C,and java.I learn all these things
+        from watching Youtube videos reading Blogs, Books and documentations. In
+        other words you can say that this is the result of my own hard work.
+      </p>
+    </article>
+  </section>
+</div>
+<%- include('./partials/boilerCodeEnd') %>
