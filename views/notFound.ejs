@@ -1,6 +1,11 @@
-<%- include('partials/boilerCode') %>
+<%- include('partials/boilerCode',{title:"Not Found"}) %>
 <div class="main">
-  <%- include('partials/navbar',{page:"notfound"}) %>
-  <section class="content"></section>
+  <%- include('partials/navbar',{page:false}) %>
+  <section
+    class="content"
+    style="display: flex; justify-content: center; align-items: center"
+  >
+    <h1 class="not">404 <%= path %> Not Found</h1>
+  </section>
 </div>
 <%- include('partials/boilerCodeEnd') %>
